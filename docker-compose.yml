@@ -1,26 +1,25 @@
----
-version: "3.8"
-services:
+version: 3.8
+service:
   movies:
-    image: anitalluri00/moviesrepo:latest
+    image: abhilifexsoul/paytmmoviesrepo:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
-  train:
-    image: anitalluri00/trainrepo:latest
+    train:
+    image: abhilifexsoul/paytmtrainrepo:latest
     ports:
       - 82:80
     deploy:
       replicas: 3
-  dth:
-    image: anitalluri00/dthrepo:latest
+     dth:
+    image: abhilifexsoul/paytmdthrepo:latest
     ports:
       - 83:80
     deploy:
       replicas: 3
-  recharge:
-    image: anitalluri00/rechargerepo:latest
+     recharge:
+    image: abhilifexsoul/paytmrechargerepo:latest
     ports:
       - 84:80
     deploy:
